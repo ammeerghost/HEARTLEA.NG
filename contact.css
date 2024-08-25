@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cc1010; /* Soft background color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px; /* Maximum width for larger screens */
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Added margin */
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #28a745; /* Change border color on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.response {
+    margin-top: 15px;
+    text-align: center;
+    color: #28a745; /* Success message color */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    font-size: 12px;
+    display: none; /* Initially hidden */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
